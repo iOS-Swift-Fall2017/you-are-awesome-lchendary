@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,16 +47,14 @@
                                     <constraint firstAttribute="width" constant="265" id="wTO-0H-Ys9"/>
                                 </constraints>
                             </imageView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPL-hb-9Hs">
-                                <rect key="frame" x="16" y="628" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPL-hb-9Hs">
+                                <rect key="frame" x="16" y="628" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dH6-Kf-3YB"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w81-8b-1bc">
-                                <rect key="frame" x="71" y="633" width="58" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w81-8b-1bc">
+                                <rect key="frame" x="73" y="633.5" width="58" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -63,8 +62,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.8408663287" green="0.86013278800000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="w81-8b-1bc" firstAttribute="leading" secondItem="cPL-hb-9Hs" secondAttribute="trailing" constant="8" id="2pN-HJ-XcA"/>
                             <constraint firstItem="1Bq-TM-q3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HuM-Wo-nmr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cPL-hb-9Hs" secondAttribute="bottom" constant="8" id="VuX-4H-Tz5"/>
                             <constraint firstItem="kaz-7l-GNi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WB2-rf-46K"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w81-8b-1bc" secondAttribute="bottom" constant="13" id="g5T-l7-MYU"/>
+                            <constraint firstItem="cPL-hb-9Hs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jj4-6t-BUo"/>
                             <constraint firstItem="kaz-7l-GNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kuz-C8-ta0"/>
                             <constraint firstItem="1Bq-TM-q3S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="orD-KM-mf5"/>
                         </constraints>
