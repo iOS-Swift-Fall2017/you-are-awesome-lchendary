@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,16 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="1Bq-TM-q3S">
-                                <rect key="frame" x="118" y="297.5" width="140" height="72.5"/>
+                                <rect key="frame" x="100" y="45" width="175" height="78.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are Awesome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DII-ya-dTO">
-                                        <rect key="frame" x="0.0" y="0.0" width="140" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" red="0.94840577411167515" green="0.097754065916978924" blue="0.4856266859421513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QN-Ba-Pz6">
-                                        <rect key="frame" x="0.0" y="42.5" width="140" height="30"/>
+                                        <rect key="frame" x="0.0" y="48.5" width="175" height="30"/>
                                         <state key="normal" title="Hey!"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fxH-x6-fAl"/>
@@ -39,19 +39,48 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="kaz-7l-GNi">
+                                <rect key="frame" x="55" y="177.5" width="265" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="312" id="cdu-0t-MAO"/>
+                                    <constraint firstAttribute="width" constant="265" id="wTO-0H-Ys9"/>
+                                </constraints>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPL-hb-9Hs">
+                                <rect key="frame" x="16" y="628" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dH6-Kf-3YB"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sounds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w81-8b-1bc">
+                                <rect key="frame" x="71" y="633" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8408663287" green="0.86013278800000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1Bq-TM-q3S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0E4-WB-d3t"/>
                             <constraint firstItem="1Bq-TM-q3S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HuM-Wo-nmr"/>
+                            <constraint firstItem="kaz-7l-GNi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WB2-rf-46K"/>
+                            <constraint firstItem="kaz-7l-GNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kuz-C8-ta0"/>
+                            <constraint firstItem="1Bq-TM-q3S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="orD-KM-mf5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="awesomeImage" destination="kaz-7l-GNi" id="Lbc-Q1-o47"/>
                         <outlet property="message" destination="DII-ya-dTO" id="kIh-jq-0Z5"/>
+                        <outlet property="playSoundSwitch" destination="cPL-hb-9Hs" id="jML-vj-7LC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image1" width="640" height="1136"/>
+    </resources>
 </document>
